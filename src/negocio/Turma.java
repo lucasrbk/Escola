@@ -16,9 +16,6 @@ public class Turma {
 	}
 
 
-	
-
-
 	public Disciplina getDisciplina() {
 		return disciplina;
 	}

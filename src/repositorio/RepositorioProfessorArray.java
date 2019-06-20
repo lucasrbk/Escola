@@ -6,10 +6,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
 import negocio.Professor;
 
-public class RepositorioProfessorArray {
+public class RepositorioProfessorArray implements RepositorioProfessor, Serializable {
 	private static final long serialVersionUID = 1L;
 	private Professor[] professores;
 	private int indice;
