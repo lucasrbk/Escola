@@ -1,8 +1,9 @@
 package negocio;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class Rendimento {
+public class Rendimento implements Serializable {
 	private Turma turma;
 	private Aluno aluno;
 	private int nota1;
@@ -20,7 +21,9 @@ public class Rendimento {
 		NotasTrabalhos = notasTrabalhos;
 		this.trabalhos = trabalhos;
 	}
-
+	public Rendimento() {
+		
+	}
 
 	public Turma getTurma() {
 		return turma;

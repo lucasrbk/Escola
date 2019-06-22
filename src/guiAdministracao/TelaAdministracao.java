@@ -7,10 +7,21 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import guiAluno.TelaAluno;
+
 public class TelaAdministracao extends JFrame {
 
 	private JPanel contentPane;
+	
+	private static JFrame TelaAdministracaoinstance;
 
+	public static JFrame getInstance() {
+		if (TelaAdministracao.TelaAdministracaoinstance == null)
+			TelaAdministracao.TelaAdministracaoinstance = new TelaAluno();
+
+		return TelaAdministracao.TelaAdministracaoinstance;
+
+	}
 	/**
 	 * Launch the application.
 	 */

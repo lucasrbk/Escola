@@ -1,17 +1,19 @@
 package negocio;
+import java.io.Serializable;
 import java.util.Date;
 
-public class Professor {
+public class Professor implements Serializable{
 	
 
-	private int id;
+	
 	private String nome;
 	private String cargo;
 	private Date nascimento;
+	private int id;
 	private String usuario;
 	private String senha;
 	
-	public Professor(int id, String nome, String cargo, Date nascimento, String usuario, String senha) {
+	public Professor(String nome, String cargo, Date nascimento,int id,String usuario, String senha) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -19,6 +21,9 @@ public class Professor {
 		this.nascimento = nascimento;
 		this.usuario = usuario;
 		this.senha = senha;
+	}
+	public Professor() {
+		
 	}
 
 	public int getId() {

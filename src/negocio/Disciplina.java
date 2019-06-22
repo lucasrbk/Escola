@@ -1,6 +1,8 @@
 package negocio;
 
-public class Disciplina {
+import java.io.Serializable;
+
+public class Disciplina implements Serializable{
 	private int id;
 	private String nome;
 	private String ementa;
@@ -11,7 +13,9 @@ public class Disciplina {
 		this.nome = nome;
 		this.ementa = ementa;
 	}
-
+	public Disciplina() {
+		
+	}
 	public int getId() {
 		return id;
 	}

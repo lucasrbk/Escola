@@ -1,8 +1,9 @@
 package negocio;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Aluno {
+public class Aluno implements Serializable{
 	int id;
 	String nome;
 	Date nascimento;
@@ -17,6 +18,9 @@ public class Aluno {
 		this.periodo = periodo;
 		this.usuario = usuario;
 		this.senha = senha;
+	}
+	public Aluno(){
+		
 	}
 	public int getId() {
 		return id;

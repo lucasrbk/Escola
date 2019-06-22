@@ -1,6 +1,8 @@
 package negocio;
 
-public class Turma {
+import java.io.Serializable;
+
+public class Turma  implements Serializable{
 	private Disciplina disciplina;
 	private Professor professor;
 	private int id;
@@ -15,7 +17,9 @@ public class Turma {
 		this.capacidade = capacidade;
 	}
 
-
+	public Turma() {
+		
+	}
 	public Disciplina getDisciplina() {
 		return disciplina;
 	}

@@ -10,6 +10,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import guiAdministracao.TelaAdministracao;
+import guiAluno.TelaAluno;
 import guiProfessor.TelaProfessor;
 
 public class TelaInicial extends JFrame {
@@ -71,12 +73,42 @@ public class TelaInicial extends JFrame {
 		
 		JButton btnAlunos = new JButton("Alunos");
 		panel.add(btnAlunos);
+		btnProfessores.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				dispose();
+				TelaAluno.getInstance().setVisible(true);
+			}
+			
+		});
 		
-		JButton btnAdministrao = new JButton("Administra\u00E7\u00E3o");
+		JButton btnAdministrao = new JButton("Administracao");
 		panel.add(btnAdministrao);
+		btnProfessores.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				dispose();
+				TelaAdministracao.getInstance().setVisible(true);
+			}
+			
+		});
 		
 		JButton btnSair = new JButton("Sair");
 		panel.add(btnSair);
+		btnProfessores.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				dispose();
+				
+			}
+			
+		});
 	}
 
 }
