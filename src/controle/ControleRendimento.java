@@ -9,7 +9,7 @@ public class ControleRendimento {
 
 	RepositorioRendimento Rendimentos = RepositorioRendimentoArray.getInstance();
 
-	public void adicionarTurma(Rendimento a) throws RendimentoException {
+	public void adicionarRendimento(Rendimento a) throws RendimentoException {
 		if (a.getAluno().getNome() != null || a.getAluno().getNome()  !="") {
 		
 			Rendimentos.adicionarRendimento(a);

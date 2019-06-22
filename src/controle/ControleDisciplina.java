@@ -8,12 +8,12 @@ public class ControleDisciplina {
 
 	RepositorioDisciplina Disciplinas = RepositorioDisciplinaArray.getInstance();
 
-	public void adicionarTurma(Disciplina a) throws DisciplinaException {
+	public void adicionarDisciplina(Disciplina a) throws DisciplinaException {
 		if (a.getId() != 0) {
 		
 			Disciplinas.adicionarDisciplina(a);
 			RepositorioDisciplinaArray.getInstance().salvarArquivo();
-			System.out.println("Turma Cadastrada com Sucesso");
+			System.out.println("Disciplina Cadastrada com Sucesso");
 		} else {
 			DisciplinaException e;
 			e = new DisciplinaException();

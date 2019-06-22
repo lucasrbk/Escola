@@ -51,9 +51,9 @@ public class TelaIncial extends JFrame {
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 
-		JMenu mnNewMenuProdutos = new JMenu("Professores");
-		mnNewMenuProdutos.setFont(new Font("Tahoma", Font.BOLD, 18));
-		menuBar.add(mnNewMenuProdutos);
+		JMenu mnNewMenuProfessores = new JMenu("Professores");
+		mnNewMenuProfessores.setFont(new Font("Tahoma", Font.BOLD, 18));
+		menuBar.add(mnNewMenuProfessores);
 
 		JMenuItem mntmInserirPizza = new JMenuItem("Login");
 		mntmInserirPizza.addActionListener(new ActionListener() {
@@ -62,7 +62,7 @@ public class TelaIncial extends JFrame {
 				//TelaCadastroPizza.getInstance().setVisible(true);
 			}
 		});
-		mnNewMenuProdutos.add(mntmInserirPizza);
+		mnNewMenuProfessores.add(mntmInserirPizza);
 
 		JMenuItem mntmInserirRefrigerante = new JMenuItem("Inserir Refrigerante");
 		mntmInserirRefrigerante.addActionListener(new ActionListener() {
@@ -71,7 +71,7 @@ public class TelaIncial extends JFrame {
 				//TelaCadastroRefrigerante.getInstance().setVisible(true);
 			}
 		});
-		mnNewMenuProdutos.add(mntmInserirRefrigerante);
+		mnNewMenuProfessores.add(mntmInserirRefrigerante);
 
 		JMenuItem mntmProcurar = new JMenuItem("Procurar");
 		mntmProcurar.addActionListener(new ActionListener() {
@@ -80,7 +80,7 @@ public class TelaIncial extends JFrame {
 				//TelaProcurarProduto.getInstance().setVisible(true);
 			}
 		});
-		mnNewMenuProdutos.add(mntmProcurar);
+		mnNewMenuProfessores.add(mntmProcurar);
 
 		JMenuItem mntmListarTodos = new JMenuItem("Listar Todos");
 		mntmListarTodos.addActionListener(new ActionListener() {
@@ -89,7 +89,7 @@ public class TelaIncial extends JFrame {
 				//TelaListarProdutos.getInstance().setVisible(true);
 			}
 		});
-		mnNewMenuProdutos.add(mntmListarTodos);
+		mnNewMenuProfessores.add(mntmListarTodos);
 
 		JMenuItem mntmRemover = new JMenuItem("Remover");
 		mntmRemover.addActionListener(new ActionListener() {
@@ -98,7 +98,7 @@ public class TelaIncial extends JFrame {
 				//TelaRemocaoProduto.getInstance().setVisible(true);
 			}
 		});
-		mnNewMenuProdutos.add(mntmRemover);
+		mnNewMenuProfessores.add(mntmRemover);
 
 		JMenu mnNewMenuPedidos = new JMenu("Alunos");
 		mnNewMenuPedidos.setFont(new Font("Tahoma", Font.BOLD, 18));
