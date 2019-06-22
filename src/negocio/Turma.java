@@ -53,21 +53,26 @@ public class Turma {
 	}
 
 
-
-
-
-	private void setId(int id) {
-		this.id = id;
-	}
-
-
-	private int getCapacidade() {
+	public int getCapacidade() {
 		return capacidade;
 	}
 
 
-	private void setCapacidade(int capacidade) {
+	public void setCapacidade(int capacidade) {
 		this.capacidade = capacidade;
 	}
-	
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Turma [disciplina=" + disciplina + ", professor=" + professor + ", id=" + id + ", capacidade="
+				+ capacidade + "]";
+	}
+
+
 }

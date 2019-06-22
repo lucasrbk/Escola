@@ -1,5 +1,7 @@
 package negocio;
 
+import java.util.Arrays;
+
 public class Rendimento {
 	private Turma turma;
 	private Aluno aluno;
@@ -77,6 +79,14 @@ public class Rendimento {
 
 	public void setTrabalhos(String[] trabalhos) {
 		this.trabalhos = trabalhos;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Rendimento [turma=" + turma + ", aluno=" + aluno + ", nota1=" + nota1 + ", nota2=" + nota2
+				+ ", NotasTrabalhos=" + Arrays.toString(NotasTrabalhos) + ", trabalhos=" + Arrays.toString(trabalhos)
+				+ "]";
 	}
 	
 	
