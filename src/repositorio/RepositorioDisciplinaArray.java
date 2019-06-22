@@ -36,9 +36,9 @@ public class RepositorioDisciplinaArray implements RepositorioDisciplina, Serial
 	}
 	
 	
-	public void removerDisciplina(String nome) {
+	public void removerDisciplina(int id) {
 		for (int i = 0; i < indice; i++) {
-			if (disciplinas[i].getNome().equals(nome)) {
+			if (disciplinas[i].getId() == id) {
 				disciplinas[i] = null;
 				indice--;
 				System.out.println("removeu na posição" + i);
@@ -68,10 +68,10 @@ public class RepositorioDisciplinaArray implements RepositorioDisciplina, Serial
 	}
 
 	
-	public Disciplina procurarDisciplina(String nome) {
+	public Disciplina procurarDisciplina(int id) {
 		Disciplina a = null;
 		for (int i = 0; i < indice; i++) {
-			if (disciplinas[i].getNome().equals(nome)) {
+			if (disciplinas[i].getId()==id) {
 				disciplinas[i].toString();
 				return disciplinas[i];
 			} else

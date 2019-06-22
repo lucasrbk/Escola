@@ -4,8 +4,8 @@ import negocio.Disciplina;
 
 public interface RepositorioDisciplina {
 	public void adicionarDisciplina(Disciplina a);
-	public void removerDisciplina(String nome);
-	public Disciplina procurarDisciplina(String nome);
+	public void removerDisciplina(int id);
+	public Disciplina procurarDisciplina(int id);
 	public Disciplina[] listarDisciplina();
 	
 }
